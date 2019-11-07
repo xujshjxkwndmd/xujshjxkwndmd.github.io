@@ -1,5 +1,6 @@
 # xujshjxkwndmd.github.io
 資應作業
+<!DOCTYPE html>
 <html>
   
 <head>
