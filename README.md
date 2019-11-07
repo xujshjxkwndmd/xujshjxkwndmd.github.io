@@ -2,7 +2,7 @@
 <html>
   
 <head>
-  <title>資應作業</title>
+  <title>Page Title</title>
 </head>
 
 <body>
