@@ -18,12 +18,12 @@
 <script language="JavaScript">
 function ShowTime(){
 　var Today = new Date();
-  var year = Today.getFullYear();
-  var month = Today.getMonth();
-  var date = Today.getDate();
-　var hour = Today.getHours();
-　var minitue = Today.getMinutes();
-　var second = Today.getSeconds();　
+  var year = Today.getFullYear(); ((minutes < 10) ? " 點 0" : " 點 ")
+  var month = ((Today.getMonth() < 10) ? '0'+Today.getMonth() : Today.getMonth());
+  var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
+　var hour = ((Today.getHours() < 10) ? '0'+Today.getHours() : Today.getHours());
+　var minitue = ((Today.getMinitues() < 10) ? '0'+Today.getMinitues() : Today.getMinitues());
+　var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
 　document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + '\n' + hour + ':' + minitue + ':' + second;
 　setTimeout('ShowTime()',1000);
 }
