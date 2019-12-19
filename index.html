@@ -17,17 +17,19 @@
 
 <script language="JavaScript">
 function ShowTime(){
-　var NowDate=new Date();
-　var h=NowDate.getHours();
-　var m=NowDate.getMinutes();
-　var s=NowDate.getSeconds();　
-　document.getElementById('showbox').innerHTML = h+':'+m+':'+s+':';
+　var Today = new Date();
+  var year = Today.getFullYear();
+  var month = Today.getMobth();
+  var date = Today.getDate();
+　var hour = Today.getHours();
+　var minitue = Today.getMinutes();
+　var second = Today.getSeconds();　
+　document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + '\n' + hour + ':' + minitue + ':' + second;
 　setTimeout('ShowTime()',1000);
 }
 </script>
 <body onload="ShowTime()">
 <div id="showbox"></div>
-</body>
 
 </body>
 
