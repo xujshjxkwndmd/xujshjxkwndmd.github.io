@@ -15,13 +15,19 @@
 
 <body>
 
-<h1>My First JavaScript</h1>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date.now()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
+<script language="JavaScript">
+function ShowTime(){
+　var NowDate=new Date();
+　var h=NowDate.getHours();
+　var m=NowDate.getMinutes();
+　var s=NowDate.getSeconds();　
+　document.getElementById('showbox').innerHTML = h+':'+m+':'+s+':';
+　setTimeout('ShowTime()',1000);
+}
+</script>
+<body onload="ShowTime()">
+<div id="showbox"></div>
+</body>
 
 </body>
 
