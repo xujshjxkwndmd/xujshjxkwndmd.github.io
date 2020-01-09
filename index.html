@@ -19,7 +19,7 @@
   
   <div id="WRAPPER"> 
     
-    <div id="SIDE">4
+    <div id="SIDE">5
          <script language="JavaScript">
             function ShowTime(){
              /* var Today = new Date();
@@ -40,7 +40,7 @@
               var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
               var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
               
-               document.getElementById('showbox').innerHTML = year+month+minute+second;
+               document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + <br> + hour + ':' + minute + ':' + second
                setTimeout('ShowTime()',1000);
               
 
