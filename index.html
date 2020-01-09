@@ -22,7 +22,7 @@
     <div id="SIDE">1
          <script language="JavaScript">
             function ShowTime(){
-              var Today = new Date();
+             /* var Today = new Date();
               var year = Today.getFullYear();
               var month = ((Today.getMonth() < 10) ? '0'+Today.getMonth() : Today.getMonth());
               var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
@@ -30,7 +30,14 @@
               var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
               var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
               document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + <br> + hour + ':' + minute + ':' + second;
-              setTimeout('ShowTime()',1000);
+              setTimeout('ShowTime()',1000); */
+
+              function ShowTime(){
+               document.getElementById('showbox').innerHTML = new Date();
+               setTimeout('ShowTime()',1000);
+              }
+
+
             }
           </script>
        <!--   <body onload="ShowTime()"> -->
