@@ -19,7 +19,15 @@
   
   <div id="WRAPPER"> 
     
-    <div id="SIDE">10
+    <div id="SIDE">11
+      <ul>
+        <li><a href="#">遊戲日常</a></li>
+        <li><a href="#">目前的坑</a></li>
+     </ul>
+     ul a {
+        color: inherit;
+        text-decoration: none;
+     }
          <script language="JavaScript">
             function ShowTime(){
               var Today = new Date();
@@ -30,24 +38,9 @@
               var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
               var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
               document.getElementById('showbox').innerHTML = year + '/' + month+1 + '/' + date + '<br>' + hour + ':' + minute + ':' + second;
-              setTimeout('ShowTime()',1000); 
-
-              /*var Today = new Date();
-              var year = Today.getFullYear();
-              var month = ((Today.getMonth() < 10) ? Today.getMonth() : Today.getMonth());
-              var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
-              var hour = ((Today.getHours() < 10) ? '0'+Today.getHours() : Today.getHours());
-              var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
-              var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
-              
-               document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + '<br>' + hour + ':' + minute + ':' + second
-               setTimeout('ShowTime()',1000);*/
-              
-
-
+              setTimeout('ShowTime()',1000);
             }
           </script>
-       <!--   <body onload="ShowTime()"> -->
           <div id="showbox"></div>
      </div>
     
