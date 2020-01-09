@@ -19,7 +19,7 @@
   
   <div id="WRAPPER"> 
     
-    <div id="SIDE">AAA
+    <div id="SIDE">AAAA
          <script language="JavaScript">
             function ShowTime(){
               var Today = new Date();
@@ -84,9 +84,29 @@
   
 </body>
   
-
+<body>
+  
+         <script language="JavaScript">
+            function ShowTime(){
+              var Today = new Date();
+              var year = Today.getFullYear();
+              var month = ((Today.getMonth() < 10) ? '0'+Today.getMonth() : Today.getMonth());
+              var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
+              var hour = ((Today.getHours() < 10) ? '0'+Today.getHours() : Today.getHours());
+              var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
+              var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
+              document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + <br> + hour + ':' + minute + ':' + second;
+              setTimeout('ShowTime()',1000);
+            }
+          </script>
+       <!--   <body onload="ShowTime()"> -->
+          <div id="showbox"></div>
+  
+  </body>
   
 
+  
+  
 
 
 
