@@ -13,14 +13,35 @@
   
 <body>
   
-  <div id="HEADER">HEADER</div>  
+  <div id="HEADER">
+    <h1>This is a Heading</h1>
+  </div>  
   
   <div id="WRAPPER">  
     
-    <div id="SIDE">SIDE
+    <div id="SIDE">
+         <script language="JavaScript">
+            function ShowTime(){
+              var Today = new Date();
+              var year = Today.getFullYear();
+              var month = ((Today.getMonth() < 10) ? '0'+Today.getMonth() : Today.getMonth());
+              var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
+              var hour = ((Today.getHours() < 10) ? '0'+Today.getHours() : Today.getHours());
+              var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
+              var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
+              document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + <br> + hour + ':' + minute + ':' + second;
+              setTimeout('ShowTime()',1000);
+            }
+          </script>
+          <body onload="ShowTime()">
+          <div id="showbox"></div>
+
     </div>
     
-    <div id="CONTENT">C
+    <div id="CONTENT">
+      <p>This is a paragraph.</p>
+      <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/10/03/99/4074180.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050" title="柴犬好可愛!">
+      <a href="https://www.google.com.tw/?gws_rd=ssl#spf=1573116543610" title="google"><br>gooogle</a>
     </div> 
     
   </div>  
@@ -65,35 +86,9 @@
   
 </body>
   
-<!--online clock
-   <script language="JavaScript">
-      function ShowTime(){
-        var Today = new Date();
-        var year = Today.getFullYear();
-        var month = ((Today.getMonth() < 10) ? '0'+Today.getMonth() : Today.getMonth());
-        var date =((Today.getDate() < 10) ? '0'+Today.getDate() : Today.getDate());
-        var hour = ((Today.getHours() < 10) ? '0'+Today.getHours() : Today.getHours());
-        var minute = ((Today.getMinutes() < 10) ? '0'+Today.getMinutes() : Today.getMinutes());
-        var second = ((Today.getSeconds() < 10) ? '0'+Today.getSeconds() : Today.getSeconds());　
-        document.getElementById('showbox').innerHTML = year + '/' + month + '/' + date + <br> + hour + ':' + minute + ':' + second;
-        setTimeout('ShowTime()',1000);
-       }
-       </script>
-       <body onload="ShowTime()">
-       <div id="showbox"></div>
-
--->
 
   
 
-  
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
-  <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2017/10/03/99/4074180.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050" title="柴犬好可愛!">
-  <a href="https://www.google.com.tw/?gws_rd=ssl#spf=1573116543610" title="google"><br>gooogle</a>
- 
-</body>
 
 
 
